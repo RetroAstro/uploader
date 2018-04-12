@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>RetroAstro</title>
+<link rel="stylesheet" type="text/css" href="./main.css">
+<link href='http://fonts.font.im/css?family=Scada' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container">
+        <div class="SPA">
+            <div class="vital left">
+                <aside>check out the designer</aside>
+                <nav class="warning">
+                    Please upload files with image type!
+                </nav>
+                <section>
+                    RetroAstro
+                </section>
+                <header>
+                    <i></i>
+                    <span>upload your photos</span>
+                </header>
+                <main>
+                    <div class="one left">
+                        <input type="text" class="username" maxlength="10">
+                        <i></i>
+                        <p>name your album and click melon</p>
+                        <span>name can not be empty</span>
+                    </div>
+                    <div class="two left">
+                            <div class="button">
+                                <i></i>
+                                <input type="file" name="file" accept="image/*" multiple/>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress"></div>
+                            </div>
+                    </div>
+                </main>
+                <footer>
+                </footer>
+                <div class="bg-grey"></div>
+            </div>
+            <div class="square-wrap left">
+                <b>channel to upload</b>
+                <canvas id="canvas"></canvas>
+                <div class="hint" id="hint">
+                    <h1>RetroAstro</h1>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="canvas.js"></script>
+</html>
