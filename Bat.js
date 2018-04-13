@@ -24,7 +24,7 @@ class Bat {
     }
     listen(port) {
         http.createServer(this.callback.bind(this)).listen(port, '0.0.0.0');
-        console.log('server is running at port 80.');
+        console.log('server is running at port 8080.');
     }
     callback(request, response) {
         var pathname = url.parse(request.url).pathname;
