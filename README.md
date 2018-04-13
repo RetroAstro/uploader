@@ -37,7 +37,7 @@
 
 ##### demo浏览地址：
 
-http://cosmos-alien.s3.natapp.cc  
+cosmos-alien.com:8080
 
 ##### 自己弄个域名还要备案好久所以先用的natapp映射给外网访问  ( 逃......
 
