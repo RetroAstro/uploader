@@ -88,6 +88,8 @@ function fileReaderEvent(files) {
         formdata.append('file', f);
 
         var taking;
+        
+        var percentComplete;
 
         xhr.upload.addEventListener('progress', (evt) => {
 
@@ -106,7 +108,7 @@ function fileReaderEvent(files) {
                     formatSpeed = uploadSpeed.toFixed(2) + " kb / s";
                 }
 
-                var percentComplete = Math.round( evt.loaded * 100 / evt.total );
+                percentComplete = Math.round( evt.loaded * 100 / evt.total );
 
                 progressBar.style.width = `${percentComplete}%`;
 
@@ -122,6 +124,7 @@ function fileReaderEvent(files) {
 
             if ( xhr.readyState == 4 && xhr.status == 200 && xhr.responseText !== '' ) {
                 var imgURL = 'save.' + xhr.responseText;
+                if ( percentComplete == undefined ) { progressBar.style.cssText = 'transition:width .3s;width:100%;' }
                 showInfo(imgURL);
             }
 
