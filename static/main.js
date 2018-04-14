@@ -124,7 +124,7 @@ function fileReaderEvent(files) {
 
             if ( xhr.readyState == 4 && xhr.status == 200 && xhr.responseText !== '' ) {
                 var imgURL = 'save.' + xhr.responseText;
-                if ( percentComplete == undefined ) { progressBar.style.cssText = 'transition:width .3s;width:100%;' }
+                if ( percentComplete == undefined ) { progressBar.style.cssText = 'transition:width .3s;width:100%' }
                 showInfo(imgURL);
             }
 
