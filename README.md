@@ -15,26 +15,6 @@
 * ##### 前端h5页面的一些特效
 
 
-##### 下面是几张效果图 ：
-
----
-
-
-
-![one](./preview/one.png)
-
-![two](./preview/two.png)
-
-![three](./preview/three.png)
-
----
-
-##### 向mysql数据库中插入数据：
-
-![sql](./preview/sql.png)
-
-
-
 ##### demo浏览地址：
 
 http://cosmos-alien.com:8080
